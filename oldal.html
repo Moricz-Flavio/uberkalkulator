@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <bod>
+  <body>
     <div class="container-flex"><h1>Űberkalkulator</h1></div>
 
   
@@ -224,6 +224,84 @@ document.getElementById("demo").innerHTML = "Ma " + day + " van. Üdvözletem!";
               </div>
             </div>
           </div>
+
+
+
+<!-- Gúla -->
+          <div class="col-xl-3 col-lg-6">
+            <div class="card text-center">
+              <h3 class="card-title">Gúla</h3>
+              <img
+                width="1500"
+                height="300"
+                src="Gúla.2.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">a oldal</span>
+                  </div>
+                  <input
+                    oninput="GSzamol()"
+                    type="text"
+                    class="form-control"
+                    id="Ga"
+                  />
+                  <div class="input-group-append">
+                    <span class="input-group-text">cm</span>
+                  </div>
+                </div>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">s oldal</span>
+                  </div>
+                  <input
+                    oninput="GSzamol()"
+                    type="text"
+                    class="form-control"
+                    id="Gs"
+                  />
+                  <div class="input-group-append">
+                    <span class="input-group-text">cm</span>
+                  </div>
+                </div>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Térfogat </span>
+                  </div>
+
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="GTér"
+                    disabled
+                  />
+                  <div class="input-group-append">
+                    <span class="input-group-text">cm</span>
+                  </div>
+                </div>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Felszín </span>
+                  </div>
+
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="GFelsz"
+                    disabled
+                  />
+                  <div class="input-group-append">
+                    <span class="input-group-text">cm</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
           <!-- Henger -->
           <div class="col-xl-3 col-lg-6">
             <div class="card text-center">
@@ -296,78 +374,7 @@ document.getElementById("demo").innerHTML = "Ma " + day + " van. Üdvözletem!";
               </div>
             </div>
           </div>
-          <!-- Gúla -->
-          <div class="col-xl-3 col-lg-6">
-            <div class="card text-center">
-              <h3 class="card-title">Gúla</h3>
-              <img
-                width="1500"
-                height="300"
-                src="Gúla.2.png"
-                class="card-img-top"
-              />
-              <div class="card-body">
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">a oldal</span>
-                  </div>
-                  <input
-                    oninput="GSzamol()"
-                    type="text"
-                    class="form-control"
-                    id="Ga"
-                  />
-                  <div class="input-group-append">
-                    <span class="input-group-text">cm</span>
-                  </div>
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">s oldal</span>
-                  </div>
-                  <input
-                    oninput="GSzamol()"
-                    type="text"
-                    class="form-control"
-                    id="Gs"
-                  />
-                  <div class="input-group-append">
-                    <span class="input-group-text">cm</span>
-                  </div>
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">Térfogat </span>
-                  </div>
-
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="GTér"
-                    disabled
-                  />
-                  <div class="input-group-append">
-                    <span class="input-group-text">cm</span>
-                  </div>
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">Felszín </span>
-                  </div>
-
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="GFelsz"
-                    disabled
-                  />
-                  <div class="input-group-append">
-                    <span class="input-group-text">cm</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>
