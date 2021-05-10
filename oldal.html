@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="hu">
   <head>
-    <title>Űberkalkulatór</title>
+    <title>Kalkula-thor</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -16,7 +16,7 @@
   </head>
 
   <body>
-    <div class="container-flex"><h1>Űberkalkulator</h1></div>
+    <div class="container-flex"><h1>Kalkula-thor</h1></div>
 
   
 <p id="demo"></p>
@@ -53,6 +53,8 @@ document.getElementById("demo").innerHTML = "Ma " + day + " van. Üdvözletem!";
       <div class="container-fluid">
         <div class="row">
           <div class="col-xl-3 col-lg-6">
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#hr">Háromszög</button>
+            <div id="hr" class="collapse">  
             <div class="card text-center">
               <h3 class="card-title">Háromszög</h3>
               <img
@@ -72,9 +74,7 @@ document.getElementById("demo").innerHTML = "Ma " + day + " van. Üdvözletem!";
                     class="form-control"
                     id="ha"
                   />
-                  <div class="input-group-append">
-                    <span class="input-group-text">cm</span>
-                  </div>
+              
                 </div>
 
                 <div class="input-group mb-3">
@@ -87,9 +87,7 @@ document.getElementById("demo").innerHTML = "Ma " + day + " van. Üdvözletem!";
                     class="form-control"
                     id="hb"
                   />
-                  <div class="input-group-append">
-                    <span class="input-group-text">cm</span>
-                  </div>
+                
                 </div>
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
@@ -101,9 +99,7 @@ document.getElementById("demo").innerHTML = "Ma " + day + " van. Üdvözletem!";
                     class="form-control"
                     id="hc"
                   />
-                  <div class="input-group-append">
-                    <span class="input-group-text">cm</span>
-                  </div>
+                
                 </div>
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
@@ -115,9 +111,7 @@ document.getElementById("demo").innerHTML = "Ma " + day + " van. Üdvözletem!";
                     class="form-control"
                     id="hma"
                   />
-                  <div class="input-group-append">
-                    <span class="input-group-text">cm</span>
-                  </div>
+                 
                 </div>
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
@@ -131,7 +125,12 @@ document.getElementById("demo").innerHTML = "Ma " + day + " van. Üdvözletem!";
                     disabled
                   />
                   <div class="input-group-append">
-                    <span class="input-group-text">cm</span>
+                    <span class="input-group-text"><select name="cm" >
+                      <option value="cm">mm</option>
+                      <option value="dm" selected>cm</option>
+                      <option value="m">dm</option>
+                      <option value="mm">m</option>
+                    </select></span>
                   </div>
                 </div>
                 <div class="input-group mb-3">
@@ -146,14 +145,22 @@ document.getElementById("demo").innerHTML = "Ma " + day + " van. Üdvözletem!";
                     disabled
                   />
                   <div class="input-group-append">
-                    <span class="input-group-text">cm</span>
+                    <span class="input-group-text"><select name="cm" id=>
+                      <option value="cm">mm<sup>2</sup></option>
+                      <option value="dm" selected>cm<sup>2</sup></option>
+                      <option value="m">dm<sup>2</sup></option>
+                      <option value="mm">m<sup>2</sup></option>
+                    </select></span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
           <!-- Ötszög -->
           <div class="col-xl-3 col-lg-6">
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#öt">Ötszögszög</button>
+            <div id="öt" class="collapse"> 
             <div class="card text-center">
               <h3>Ötszög</h3>
               <img
@@ -173,9 +180,7 @@ document.getElementById("demo").innerHTML = "Ma " + day + " van. Üdvözletem!";
                     class="form-control"
                     id="öa"
                   />
-                  <div class="input-group-append">
-                    <span class="input-group-text">cm</span>
-                  </div>
+                 
                 </div>
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
@@ -187,9 +192,7 @@ document.getElementById("demo").innerHTML = "Ma " + day + " van. Üdvözletem!";
                     class="form-control"
                     id="ör"
                   />
-                  <div class="input-group-append">
-                    <span class="input-group-text">cm</span>
-                  </div>
+              
                 </div>
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
@@ -203,7 +206,12 @@ document.getElementById("demo").innerHTML = "Ma " + day + " van. Üdvözletem!";
                     disabled
                   />
                   <div class="input-group-append">
-                    <span class="input-group-text">cm</span>
+                    <span class="input-group-text"><select name="cm">
+                      <option value="cm">mm</option>
+                      <option value="dm" selected>cm</option>
+                      <option value="m">dm</option>
+                      <option value="mm">m</option>
+                    </select></span>
                   </div>
                 </div>
                 <div class="input-group mb-3">
@@ -218,17 +226,24 @@ document.getElementById("demo").innerHTML = "Ma " + day + " van. Üdvözletem!";
                     disabled
                   />
                   <div class="input-group-append">
-                    <span class="input-group-text">cm</span>
+                    <span class="input-group-text"><select name="cm">
+                      <option value="cm">mm<sup>2</sup></option>
+                      <option value="dm" selected>cm<sup>2</sup></option>
+                      <option value="m">dm<sup>2</sup></option>
+                      <option value="mm">m<sup>2</sup></option>
+                    </select></span>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </div></div>
 
+          </div>
 
 
 <!-- Gúla -->
           <div class="col-xl-3 col-lg-6">
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#Gl">Gúla</button>
+            <div id="Gl" class="collapse">
             <div class="card text-center">
               <h3 class="card-title">Gúla</h3>
               <img
@@ -248,9 +263,7 @@ document.getElementById("demo").innerHTML = "Ma " + day + " van. Üdvözletem!";
                     class="form-control"
                     id="Ga"
                   />
-                  <div class="input-group-append">
-                    <span class="input-group-text">cm</span>
-                  </div>
+                 
                 </div>
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
@@ -262,9 +275,7 @@ document.getElementById("demo").innerHTML = "Ma " + day + " van. Üdvözletem!";
                     class="form-control"
                     id="Gs"
                   />
-                  <div class="input-group-append">
-                    <span class="input-group-text">cm</span>
-                  </div>
+                
                 </div>
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
@@ -278,12 +289,17 @@ document.getElementById("demo").innerHTML = "Ma " + day + " van. Üdvözletem!";
                     disabled
                   />
                   <div class="input-group-append">
-                    <span class="input-group-text">cm</span>
+                    <span class="input-group-text"><select name="cm">
+                      <option value="cm">mm<sup>3</sup></option>
+                      <option value="dm" selected>cm<sup>3</sup></option>
+                      <option value="m">dm<sup>3</sup></option>
+                      <option value="mm">m<sup>3</sup></option>
+                    </select></span>
                   </div>
                 </div>
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
-                    <span class="input-group-text">Felszín </span>
+                    <span class="input-group-text">Felszín</span>
                   </div>
 
                   <input
@@ -293,17 +309,24 @@ document.getElementById("demo").innerHTML = "Ma " + day + " van. Üdvözletem!";
                     disabled
                   />
                   <div class="input-group-append">
-                    <span class="input-group-text">cm</span>
+                    <span class="input-group-text"><select name="cm">
+                      <option value="cm">mm <sup>2</sup></option>
+                      <option value="dm" selected>cm<sup>2</sup></option>
+                      <option value="m">dm<sup>2</sup></option>
+                      <option value="mm">m<sup>2</sup></option>
+                    </select></span>
                   </div>
                 </div>
               </div>
-            </div>
+            </div></div>
           </div>
 
 
 
           <!-- Henger -->
           <div class="col-xl-3 col-lg-6">
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#Hg">Henger</button>
+            <div id="Hg" class="collapse">
             <div class="card text-center">
               <h3 class="card-title">Henger</h3>
               <img
@@ -323,9 +346,7 @@ document.getElementById("demo").innerHTML = "Ma " + day + " van. Üdvözletem!";
                     class="form-control"
                     id="Hr"
                   />
-                  <div class="input-group-append">
-                    <span class="input-group-text">cm</span>
-                  </div>
+                  
                 </div>
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
@@ -337,9 +358,7 @@ document.getElementById("demo").innerHTML = "Ma " + day + " van. Üdvözletem!";
                     class="form-control"
                     id="Hm"
                   />
-                  <div class="input-group-append">
-                    <span class="input-group-text">cm</span>
-                  </div>
+        
                 </div>
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
@@ -353,7 +372,12 @@ document.getElementById("demo").innerHTML = "Ma " + day + " van. Üdvözletem!";
                     disabled
                   />
                   <div class="input-group-append">
-                    <span class="input-group-text">cm</span>
+                    <span class="input-group-text"><select name="cm">
+                      <option value="cm">mm<sup>3</sup></option>
+                      <option value="dm" selected>cm<sup>3</sup></option>
+                      <option value="m">dm<sup>3</sup></option>
+                      <option value="mm">m<sup>3</sup></option>
+                    </select></span>
                   </div>
                 </div>
                 <div class="input-group mb-3">
@@ -368,11 +392,16 @@ document.getElementById("demo").innerHTML = "Ma " + day + " van. Üdvözletem!";
                     disabled
                   />
                   <div class="input-group-append">
-                    <span class="input-group-text">cm</span>
+                    <span class="input-group-text"><select name="cm">
+                      <option value="cm">mm<sup>2</sup></option>
+                      <option value="dm" selected>cm<sup>2</sup></option>
+                      <option value="m">dm<sup>2</sup></option>
+                      <option value="mm">m<sup>2</sup></option>
+                    </select></span>
                   </div>
                 </div>
               </div>
-            </div>
+            </div></div>
           </div>
           
         </div>
